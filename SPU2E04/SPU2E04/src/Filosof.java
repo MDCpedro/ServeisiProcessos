@@ -48,8 +48,8 @@ public class Filosof extends Thread {
             }
 
             synchronized (dret) {
-                dret.setOcupado(true);
                 verificar();
+                dret.setOcupado(true);
                 System.out.println(nom + " agafa el cobert dret");
                 System.out.println(nom + " menjant");
                 esperar(r.nextInt(2000, 3000));
